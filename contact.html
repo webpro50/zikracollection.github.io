@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Zikra Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fbeaff, #e0f7fa);
+      color: #333;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Cursive', sans-serif;
+      font-size: 3rem;
+      color: #e68f9a;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b4778b;
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ba8ea3;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      background-color: #f3d7e8;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #f8a1c4;
+      color: white;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d87ea0;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      margin-bottom: 1.5rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #e68f9a;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d16b7d;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      text-align: center;
+      color: #666;
+    }
+
+    .contact-info a {
+      color: #d87ea0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #a37991;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zikra Collection</h1>
+    <p>Get in Touch With Us</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bridal.html">Bridal</a>
+      <a href="party.html">Party Wear</a>
+      <a href="material.html">Material</a>
+      <a href="readymade.html">Ready-made</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form action="mailto:zikracollection@example.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 Phone: <a href="tel:+919339999912">+91 93399 99912</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/919339999912" target="_blank">Chat Now</a></p>
+      <p>📷 Instagram: <a href="https://www.instagram.com/Zikracollection_" target="_blank">@Zikracollection_</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zikra Collection. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
