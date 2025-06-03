@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+  color: #333;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+header {
+  background-color: #fcdff1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 80px;
+  margin-right: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #555;
+}
+.hero {
+  background: linear-gradient(145deg, #ffe5ec, #e0c3fc);
+  padding: 3rem;
+  text-align: center;
+}
+.btn {
+  background: #ffb6c1;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.collection-types {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.collection-card {
+  background-color: #faf0f8;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  background-color: #fcdff1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+/* Loader Styles */
+#loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f8e8f9; /* Pastel Unicorn Background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+#loader .spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ffb6c1;
+  border-top: 6px solid #dda0dd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+#loader p {
+  margin-top: 10px;
+  color: #9b59b6;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    
